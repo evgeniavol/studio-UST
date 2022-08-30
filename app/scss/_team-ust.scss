@@ -1,0 +1,46 @@
+.team-ust {
+    padding-bottom: 156px;
+    background-color: #03115F;
+    background-image: url('../images/content/team-ust.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.team-ust__content {
+    padding-top: 110px;
+}
+.team-ust__subtitle {
+    color: #CDCFDF;
+    margin-bottom: 10px;
+}
+
+.team-ust__title {
+    margin-bottom: 16px;
+    color: $white-grey;
+}
+
+.team-ust__descr {
+    max-width: 577px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: $text-grey;
+}
+
+
+@media (max-width: 480px) {
+    .team-ust {
+        padding-bottom: 84px;
+    }
+
+    .team-ust__subtitle {
+        margin-bottom: 4px;
+    }
+
+    .team-ust__descr {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

@@ -1,0 +1,37 @@
+.block-cards {
+    padding: 90px 0;
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.block-card {
+    max-width: 453px;
+    min-height: 214px;
+    display: flex;
+    justify-content: center;
+}
+
+.block-card__img {
+    padding: 67px 40px;
+    max-width: 160px;
+    background-color: $blue;
+}
+
+.block-card__text {
+    padding: 52px 40px;
+    max-width: 293px;
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 325;
+    font-size: 16px;
+    line-height: 22px;
+    color: #35417F;
+    background-color: #E6E8EF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

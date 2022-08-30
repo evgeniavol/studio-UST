@@ -1,0 +1,44 @@
+.completed-projects {
+    padding: 113px 0 283px;
+    background-color: #E6E8EF;
+}
+
+.completed-projects__content {
+    text-align: center;
+}
+
+.completed-projects__subtitle {
+    margin-bottom: 8px;
+}
+
+.completed-projects__title {
+    margin-bottom: 24px;
+}
+
+.completed-projects__text {
+    max-width: 906px;
+    margin: 0 auto;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .completed-projects {
+        padding: 40px 0 173px;
+    }
+    .completed-projects__content {
+        text-align: left;
+    }
+    .completed-projects__title {
+        margin-bottom: 16px;
+    }
+    .completed-projects__text {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

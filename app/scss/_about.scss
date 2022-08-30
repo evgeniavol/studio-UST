@@ -1,0 +1,286 @@
+.about {
+    padding: 180px 0 90px 0;
+}
+
+.about__title {
+    margin-bottom: 24px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-wrap {
+    display: flex;
+}
+
+.about-image {
+    max-width: 947px;
+    max-height: 640px;
+    margin-right: 40px;
+}
+
+.about-descr {
+    max-width: 453px;
+}
+
+.about-descr__title {
+    margin-bottom: 24px;
+}
+
+.about-descr__block {
+    font-size: 18px;
+    line-height: 22px;
+    color: $small-text;
+    margin-bottom: 10px;
+
+    p:not(last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+.about-descr__btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    max-width: 436px;
+}
+
+.btn-transparent,
+.btn-blue {
+    display: block;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 14px 20px;
+    text-align: center;
+
+    // display: block;
+    max-width: 206px;
+    width: 100%;
+    // font-size: 16px;
+    // line-height: 19px;
+    // height: 48px;
+}
+
+.btn-transparent {
+    // padding: 14px 20px;
+    border: 2px solid $blue;
+    color: $blue;
+    background-color: transparent;
+    &:hover {
+    border: 2px solid #5b8fca;
+background-color: #5b8fca;
+color: $white;
+    }
+}
+
+.btn-blue {
+    padding: 15px 50px;
+    border: 0;
+    color: $white;
+    background-color: $blue;
+    &:hover {
+    background-color: #5b8fca;
+
+        }
+}
+
+.about__title--mob {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .about-wrap {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 100%;
+    }
+
+    .about-image {
+        flex-basis: 50%;
+    }
+
+    .about-descr {
+        flex-basis: 50%;
+    }
+
+    .about-descr__block {
+        font-size: 19px;
+        line-height: 23px;
+
+        p {
+            width: 100%;
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+
+            &:nth-last-child(-n+2) {
+                display: none;
+            }
+
+        }
+
+    }
+
+    .about-descr__title {
+        margin-top: -12px;
+        margin-bottom: 12px;
+    }
+
+    .about-descr__btns {
+        margin-top: 10px;
+        justify-content: flex-end;
+        max-width: 100%;
+    }
+
+    .btn-transparent {
+        display: none;
+    }
+
+    .btn-blue {
+        width: unset;
+        margin-top: -5px;
+        padding: 0;
+        font-size: 19px;
+        line-height: 20px;
+        color: $blue;
+        background-color: transparent;
+    }
+}
+
+
+@media (max-width: 1023px) {
+    .about {
+        margin-top: 100px;
+        padding: 0px 0 60px 0;
+    }
+
+    .about-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .about__title {
+        margin-bottom: 8px;
+    }
+
+    .about__title--mob {
+        display: none;
+    }
+
+    .about-descr {
+        max-width: 100%;
+    }
+
+    .about-descr__title {
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+
+    .about-descr__block {
+        font-size: 16px;
+        line-height: 24px;
+
+        P {
+            margin-bottom: 5px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .btn-blue {
+        width: unset;
+        background-color: transparent;
+        color: $blue;
+        padding: 0;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .about {
+        margin-top: 0;
+        padding: 0;
+
+        .container {
+            padding: 0;
+        }
+    }
+
+    .about-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 100%;
+        order: -1;
+        margin-bottom: 24px;
+    }
+
+    .about__title {
+        display: none;
+    }
+
+    .about__title--mob {
+        margin-bottom: 8px;
+        display: block;
+    }
+
+    .about-descr {
+        width: 100%;
+        padding: 0 16px;
+        margin-top: 0;
+    }
+
+    .about-descr__title {
+        margin-bottom: 16px;
+    }
+
+    .about-descr__block {
+        font-size: 14px;
+        line-height: 20px;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .about-descr__btns {
+        margin-top: 10px;
+        justify-content: flex-end;
+        max-width: 100%;
+    }
+
+    .btn-transparent {
+        display: none;
+    }
+
+    .btn-blue {
+        background-color: transparent;
+        color: $blue;
+        font-size: 14px;
+        line-height: 16px;
+        padding: 0;
+        width: unset;
+    }
+}

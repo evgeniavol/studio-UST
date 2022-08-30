@@ -1,0 +1,23 @@
+.page-order__project {
+        background-color: #EEEFF1;
+        padding-bottom: 406px;
+        background-image: url('../images/content/your-project-bg.jpg');
+        background-repeat: no-repeat;
+        background-position: 50% 70%;
+        background-size: cover;
+    
+    .your-project__content {
+        padding-left: 70px;
+        padding-top: 110px;
+    }
+    
+}
+
+@media(max-width: 767px) {
+    .page-order__project {
+        padding-bottom: 146px;
+        .your-project__content {
+            padding-left: 0;
+        }
+    }
+}

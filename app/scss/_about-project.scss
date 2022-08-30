@@ -1,0 +1,255 @@
+.about-project {
+    margin-top: -280px;
+    padding-left: 200px;
+    padding-bottom: 110px;
+}
+
+.about-project__form {
+    padding: 64px 124px;
+    max-width: 1194px;
+    width: 100%;
+    background-color: $white-grey;
+}
+
+.personal-data,
+.technical-specification,
+.appellation-project {
+    display: flex;
+    padding: 24px 0;
+    width: 100%;
+    border-bottom: 2px solid $text-grey;
+}
+
+.personal-data__descr--title,
+.technical-specification__descr--title,
+.appellation-project__descr {
+    margin-bottom: 8px;
+}
+
+.personal-data__descr,
+.technical-specification__descr,
+.appellation-project__descr {
+    width: 50%;
+}
+
+.personal-data__descr--text,
+.technical-specification__descr--text {
+    max-width: 352px;
+}
+
+.personal-data__inputs,
+.technical-specification__action,
+.appellation-project__textarea {
+    width: 50%;
+}
+
+.technical-specification__btn {
+    margin-bottom: 16px;
+    padding: 14px 20px;
+    color: $blue;
+    border: 2px solid $blue;
+    &:hover {
+        color: $white;
+        background-color: $blue;
+        transition:  background-color .4s ease-in-out;
+    }
+}
+
+.appellation-project {
+    margin-bottom: 24px;
+}
+
+.appellation-project .form__textarea {
+    margin-bottom: 16px;
+}
+
+.application {
+    margin-left: 470px;
+    margin-bottom: 10px;
+}
+
+.technical-specification__block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.technical-specification__txt {
+    display: none;
+}
+
+.technical-specification__txt--mb {
+    max-width: 185px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 14px;
+    color: #75788D;
+}
+
+.private-data {
+    padding: 14px 20px;
+    background-color: #E6E8EF;
+}
+
+.private-data__text {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 20px;
+    color: $small-text;
+    max-width: 417px;
+}
+
+.private-data__link {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #A960AB;
+    
+    &:hover {
+        opacity: .5;
+        transition: .3s ease-in-out;
+    }
+}
+
+@media (max-width: 767px) {
+    .private-data {
+        padding: 14px 6px 14px 16px;
+    }
+
+}
+
+@media (max-width: 1200px)  {
+    .about-project {
+        margin-top: -341px;
+        padding-left: 0px;
+        padding-bottom: 110px;
+    }
+}
+@media (max-width: 1023px) {
+    .about-project {
+        margin-top: -341px;
+        padding-left: 0px;
+        padding-bottom: 110px;
+    }
+
+    .about-project__form {
+        padding: 30px 20px;
+    }
+    .personal-data__descr--title, .technical-specification__descr--title, .appellation-project__descr {
+        font-size: 21px;
+    line-height: 29px;
+    }
+    .personal-data__descr--text, .technical-specification__descr--text {
+        max-width: 316px;
+    }
+    .application {
+        margin-left: 339px;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-project {
+        margin-top: 0px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+
+        .container {
+            padding: 0;
+        }
+    }
+
+    .about-project__form {
+        padding: 40px 16px 64px 16px;
+    }
+
+    .personal-data,
+    .technical-specification,
+    .appellation-project {
+        padding: 0;
+    }
+
+    .personal-data,
+    .technical-specification,
+    .appellation-project {
+        border-bottom: none;
+        flex-direction: column;
+    }
+
+    .personal-data__descr--title,
+    .technical-specification__descr--title {
+        margin-bottom: 4px;
+    }
+
+    .technical-specification__descr--title,
+    .appellation-project__descr {
+        margin-top: 40px;
+    }
+
+    .appellation-project__descr {
+        margin-bottom: 16px;
+    }
+
+    .personal-data__descr,
+    .technical-specification__descr,
+    .appellation-project__descr {
+        width: 100%;
+    }
+
+    .personal-data__inputs,
+    .technical-specification__action,
+    .appellation-project__textarea {
+        width: 100%;
+    }
+
+    .personal-data__descr--text {
+        margin-bottom: 16px;
+    }
+
+    .personal-data__inputs .form__input {
+        margin-bottom: 16px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .personal-data {
+        padding-bottom: 16px;
+        border-bottom: 2px solid $text-grey;
+    }
+
+    .technical-specification {
+        padding-bottom: 24px;
+        border-bottom: 2px solid $text-grey;
+    }
+
+    .application {
+        margin-left: 0px;
+    }
+
+    .technical-specification__txt {
+        display: flex;
+    }
+
+    .technical-specification__txt--mb {
+        max-width: 159px;
+    }
+
+    .technical-specification__btn {
+        padding: 8px 14px;
+        font-size: 12px;
+        line-height: 16px;
+        max-width: 142px;
+    }
+
+    .technical-specification__descr--text {
+        margin-bottom: 24px;
+    }
+
+    .appellation-project .form__textarea {
+        min-height: 80px;
+    }
+
+}

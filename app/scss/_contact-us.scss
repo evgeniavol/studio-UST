@@ -1,0 +1,75 @@
+.contact-us {
+    padding: 243px 0 244px;
+    background-color: #03115F;
+    background-image: url('../images/content/ideas-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contact-us__subtitle {
+    color: $text-grey;
+    margin-bottom: 8px;
+}
+
+.contact-us__title {
+    color: #E6E8EF;
+    margin-bottom: 24px;
+}
+
+.contact-us__text {
+    max-width: 577px;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: $text-grey;
+    margin-bottom: 30px;
+}
+
+.contact-us__btn {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 14px 20px;
+    max-width: 206px;
+    width: 100%;
+    background-color: $blue;
+    border: none;
+    color: $white-grey;
+    &:hover {
+        background-color: #5b8fca;
+        color: $white;
+        transition: .3s;
+    }
+}
+
+@media (max-width: 1023px)  {
+    .contact-us__text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+@media (max-width: 767px) {
+    .contact-us {
+        padding: 81px 0 64px;
+    }
+
+    .contact-us__title {
+        margin-bottom: 16px;
+    }
+
+    .contact-us__text {
+        font-size: 13px;
+        line-height: 17px;
+        margin-bottom: 40px;
+    }
+
+    .contact-us__btn {
+        max-width: unset;
+        width: 100%;
+        padding: 16px 79px;
+        border-radius: 8px;
+    }
+}

@@ -1,0 +1,42 @@
+.join-us {
+    padding: 348px 0 252px;
+    background-color: #03115F;
+    background-image: url('../images/content/join-us-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.join-us__subtitle {
+    color: $text-grey;
+    margin-bottom: 8px;
+}
+
+.join-us__title {
+    color: $white-grey;
+    margin-bottom: 64px;
+}
+@media (max-width: 1200px) {
+    .join-us {
+        padding: 180px 0;
+    }
+}
+@media (max-width: 1023px) {
+    .join-us {
+        padding: 140px 0;
+    }
+}
+@media (max-width: 767px) {
+    .join-us {
+        padding: 80px 0;
+    }
+}
+@media (max-width: 480px) {
+    .join-us  {
+        padding: 80px 0 64px;
+        background-image: url('../images/content/join-us-bg-sm.jpg');
+    }
+    .join-us__content {
+        text-align: center;
+    }
+} 

@@ -1,0 +1,22 @@
+.page-your-project {
+    .your-project {
+        padding-bottom: 406px;
+    }
+
+    .your-project__content {
+        padding-top: 110px;
+    }
+}
+
+@media (max-width: 767px) {
+    .page-your-project {
+        .your-project {
+            padding: 0;
+            padding-bottom: 146px;
+        }
+
+        .your-project__content {
+            padding-top: 60px;
+        }
+    }
+}

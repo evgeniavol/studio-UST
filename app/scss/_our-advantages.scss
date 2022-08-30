@@ -1,0 +1,149 @@
+.our-advantages {
+    padding: 90px 0;
+}
+
+.our-advantages__subtitle {
+    margin-bottom: 8px;
+}
+
+.our-advantages__title {
+    margin-bottom: 24px;
+}
+
+.our-advantages__text {
+    margin-bottom: 64px;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    max-width: 906px;
+}
+
+.our-advantages__boxs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box {
+    max-width: 330px;
+}
+
+.box__img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.box__title {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    color: $blue;
+    margin-bottom: 10px;
+    min-height: 64px;
+}
+
+.box__descr {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 325;
+    font-size: 20px;
+    line-height: 28px;
+    color: $small-text;
+}
+@media (max-width: 1200px) {
+    .our-advantages__boxs {
+        justify-content: space-between;
+    }
+    .box {
+        margin-right: 0;
+        max-width: 470px;
+        margin-bottom: 64px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+@media (max-width: 1023px) {
+    .our-advantages {
+        padding: 44px 0 60px 0;
+    }
+
+    .our-advantages__text {
+        max-width: 621px;
+    }
+
+    .box {
+        max-width: 324px;
+        margin-right: 0;
+        margin-bottom: 60px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .our-advantages__boxs {
+        justify-content: space-between;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+    .our-advantages {
+        padding: 24px 0 40px 0;
+    }
+
+    .our-advantages__subtitle {
+        margin-bottom: 8px;
+    }
+
+    .our-advantages__title {
+        margin-bottom: 16px;
+    }
+
+    .our-advantages__text {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 40px;
+    }
+
+    .box {
+        max-width: 100%;
+        margin-bottom: 64px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+    }
+
+    .box__img {
+        margin-bottom: 15px;
+    }
+
+    .box__title {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 10px;
+        min-height: unset;
+    }
+
+    .box__descr {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: left;
+    }
+
+    .our-advantages__boxs {
+        margin-bottom: 40px;
+    }
+
+}

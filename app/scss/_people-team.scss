@@ -1,0 +1,266 @@
+.people-team {
+    padding: 180px 0;
+}
+
+.people-team__top {
+    display: flex;
+}
+
+.left-descr {
+    max-width: 696px;
+    width: 100%;
+    margin-bottom: 91px;
+}
+
+.left-descr__title {
+    max-width: 520px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 64px;
+    color: #03115F;
+    margin-bottom: 24px;
+}
+
+.left-descr__text {
+    font-size: 20px;
+    line-height: 28px;
+    color: $small-text;
+    max-width: 696px;
+    width: 100%;
+}
+
+.right-descr {
+    max-width: 704px;
+    width: 100%;
+}
+
+.right-descr .cards-team {
+    display: flex;
+}
+
+.right-descr .card-team {
+    width: 331px;
+}
+
+.card-team {
+    width: 330px;
+}
+
+.card-team__img {
+    width: 100%;
+    position: relative;
+
+    img {
+        height: 330px;
+        object-fit: cover;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 32px;
+        height: 32px;
+        background-image: url('../images/content/purple-linkedin.svg');
+        background-repeat: no-repeat;
+    }
+}
+
+.card-team__descr {
+    padding: 16px 0 38px;
+}
+
+.card-team__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #03115F;
+    margin-bottom: 4px;
+}
+
+.card-team__text {
+    text-align: center;
+}
+
+.people-team__bottom .cards-team {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.people-team__bottom .card-team {
+    margin-bottom: 40px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media(min-width: 1500px) {
+    .left-descr {
+        margin-right: 42px;
+    }
+
+    .right-descr .card-team {
+        width: 330px;
+        margin-right: 40px;
+
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .people-team__bottom .card-team {
+        margin-right: 40px;
+
+        &:nth-child(4) {
+            margin-right: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+@media(min-width: 1200px) and (max-width: 1499px) {
+    .left-descr {
+        margin-right: 34px;
+    }
+
+    .right-descr .cards-team {
+        justify-content: space-between;
+    }
+
+    .right-descr .card-team {
+        width: 314px;
+        margin-right: 40px;
+
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .people-team__bottom .card-team {
+        width: 314px;
+        margin-right: 40px;
+
+        &:nth-child(4) {
+            margin-right: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .people-team__top {
+        flex-wrap: nowrap;
+    }
+
+    .people-team__bottom .cards-team {
+        justify-content: space-between;
+    }
+
+    .left-descr {
+        margin-right: 30px;
+    }
+
+    .left-descr__title {
+        font-size: 45px;
+        line-height: 47px;
+    }
+
+    .right-descr .card-team {
+        width: 250px;
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .people-team__bottom .card-team {
+        width: 291px;
+    }
+}
+
+
+
+@media(max-width: 1023px) {
+    .right-descr {
+        max-width: unset;
+    }
+
+    .right-descr .cards-team {
+        justify-content: space-evenly;
+    }
+
+    .people-team__bottom .cards-team {
+        justify-content: space-evenly;
+    }
+
+    .people-team__bottom .card-team {
+        margin-right: 0;
+    }
+
+    .people-team__top {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 767px) {
+    .people-team {
+        padding: 80px 0;
+    }
+
+    .people-team__top {
+        flex-wrap: wrap;
+    }
+
+    .left-descr {
+        margin-bottom: 40px;
+        margin-right: 0;
+    }
+
+    .left-descr__title {
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    .left-descr__text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .right-descr .cards-team {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .people-team__bottom .card-team {
+        margin-right: 0;
+    }
+
+    .card-team__title {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .card-team__text {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

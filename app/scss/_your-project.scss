@@ -1,0 +1,32 @@
+.your-project {
+    padding: 110px 0 406px;
+    background-image: url('../images/content/your-project-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
+    background-size: cover;
+}
+
+.your-project__subtitle {
+    color: #E6E8EF;
+    margin-bottom: 10px;
+}
+
+.your-project__title {
+    color: $white-grey;
+    margin-bottom: 24px;
+}
+
+.your-project__text {
+    color: $white-grey;
+}
+
+
+@media (max-width: 767px) {
+    .your-project {
+        padding: 80px 0 146px;
+    }
+    .your-project__text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

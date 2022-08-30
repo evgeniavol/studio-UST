@@ -1,0 +1,114 @@
+.statistics {
+    margin-top: -249px;
+}
+.statistics__blocks {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    width: 100%;
+}
+.statistics__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 330px;
+    height: 180px;
+}
+
+.statistics__number {
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 82px;
+    text-transform: uppercase;
+    color: $white-grey;
+}
+
+.statistics__description {
+    font-weight: 325;
+    font-size: 26px;
+    line-height: 32px;
+    color: $white-grey;
+}
+@media (max-width: 1200px) {
+    .statistics {
+        margin-top: -220px;
+        padding-left: 35px;
+    }
+    .statistics__block {
+        justify-content: start;
+    }
+    .statistics__description {
+        text-align: center;
+    }
+}
+@media (max-width: 1023px) {
+    .statistics {
+        margin-top: -220px;
+        padding-left: 0;
+    }
+    .statistics__block {
+        justify-content: start;
+        width: 200px;
+    }
+    .statistics__number {
+        font-size: 62px;
+        line-height: 77px;
+    }
+    .statistics__description {
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+    }
+}
+@media (min-width: 426px) and (max-width: 767px) {
+    .statistics {
+        margin-top: 0;
+        padding: 40px 16px;
+        background-color: #03115F;
+    }
+    .statistics__number {
+        font-size: 56px;
+        line-height: 67px;
+    }
+
+    .statistics__description {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .statistics__blocks {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .statistics__block {
+        width: 219px;
+        height: 168px;
+    }
+}
+@media (max-width: 425px) {
+    .statistics {
+        margin-top: 0;
+        padding: 40px 16px;
+        background-color: #03115F;
+    }
+    .statistics__number {
+        font-size: 56px;
+        line-height: 67px;
+    }
+
+    .statistics__description {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .statistics__blocks {
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+    .statistics__block {
+        width: 125px;
+        height: 168px;
+    }
+    .statistics__description {
+        text-align: center;
+    }
+}

@@ -1,0 +1,46 @@
+.our-projects {
+    padding-bottom: 90px;
+    background-color: #201324;
+    background-image: url('../images/content/our-projects-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.our-projects__content {
+    padding-top: 103px;
+}
+
+.our-projects__subtitle {
+    margin-bottom: 10px;
+    color: #CDCFDF;
+}
+
+.our-projects__title {
+    margin-bottom: 15px;
+    color: $white-grey;
+}
+
+.our-projects__text {
+    max-width: 577px;
+    margin-bottom: 46px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: $text-grey;
+}
+
+@media(max-width: 767px) {
+    .our-projects {
+        padding-bottom: 64px;
+    }
+
+    .our-projects__content{
+        padding-top: 80px;
+    }
+     .our-projects__text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

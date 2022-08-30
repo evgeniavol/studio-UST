@@ -1,0 +1,140 @@
+.your-needs {
+    padding: 180px 0;
+}
+
+.your-needs__subtitle {
+    margin-bottom: 10px;
+}
+
+.your-needs__title {
+    max-width: 577px;
+    width: 100%;
+    margin-bottom: 64px;
+    color: $dark-blue;
+
+}
+
+.your-needs__sliders {
+    position: relative;
+}
+
+.yourNeeds-slide__img {
+padding: 0 0 58% 0;
+overflow: hidden;
+position: relative;
+
+img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+}
+
+.yourNeeds-slide__descr {
+    background-color: #F8F9F9;
+    padding: 24px 34px 35px;
+    min-height: 162px;
+
+    h5 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 10px;
+        color: $blue;
+    }
+
+    p {
+        font-weight: 325;
+        font-size: 16px;
+        line-height: 22px;
+        color: #535670;
+    }
+}
+
+.slider-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+.slider-bullet {
+    width: 8px;
+    height: 8px;
+    background-color: #CDCFDF;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 17px;
+}
+
+.slider-bullet-active {
+    background-color: #A960AB;
+}
+
+@media (max-width: 1200px) {
+    .yourNeeds-slide__descr {
+        min-height: 230px;
+        padding: 20px;
+        p {
+            font-size: 15px;
+        }
+    }
+
+    .slider-pagination {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .yourNeeds-slide__descr {
+        padding: 20px;
+        min-height: 240px;
+
+        h5 {
+            font-size: 19px;
+            line-height: 25px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+
+    .slider-pagination {
+        margin-top: 30px;
+    }
+   
+}
+
+@media (max-width: 320px){
+    .your-needs {
+        padding: 80px 0 80px;
+    }
+
+    .slider-pagination {
+        margin-top: 40px;
+    }
+
+    .yourNeeds-slide__descr {
+        padding: 24px;
+        min-height: unset;
+
+        h5 {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        p {
+            font-family: 'Rubik', sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}
+
